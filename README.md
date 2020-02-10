@@ -20,7 +20,7 @@ Next.js
 </ul>
 
 ## Uygulama Linki
-
+<!--https://zisankarsatar.herokuapp.com/-->
 
 <!--
 ## Uygulamayı Bilgisyarınızda çalıştırmak için:
