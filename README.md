@@ -20,8 +20,9 @@ Next.js
 </ul>
 
 ## Uygulama Linki
-
+/*
 ## Uygulamayı Bilgisyarınızda çalıştırmak için:
 
 Pages dosyası içinde index.js ve [postId].js de bulunan "zisankarsatar.herokuapp" bulunan yere "localhost:3000" ile değiştirerek,
 dosya yolunun açık olduğu terminale "yarn dev" yazmak yeterli. :D
+*/
