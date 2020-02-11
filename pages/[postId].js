@@ -4,7 +4,7 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import img from "../public/back1.png";
+import img from  "../public/back1.png";
 
 const BlogPost = ({ post }) => (
   <body>
@@ -67,6 +67,5 @@ BlogPost.getInitialProps = async ({ req, query }) => {
   const json = await res.json();
   return { post: json.post };
 };
-
 
 export default BlogPost;
