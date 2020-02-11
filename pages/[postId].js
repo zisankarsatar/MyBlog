@@ -68,4 +68,5 @@ BlogPost.getInitialProps = async ({ req, query }) => {
   return { post: json.post };
 };
 
+
 export default BlogPost;
