@@ -69,6 +69,7 @@ const Home = ({posts}) => (
 Home.getInitialProps = async ({ req }) => {
   // TODO: aşağıdaki satırda bulunan adresi kendi sunucu adresinle değiştirmelisin
   const res = await fetch(`http://zisankarsatar.herokuapp/api/posts`);//veriyi alması gereken yer
+  console.log(res);
   const json = await res.json();
   return { posts: json.posts };
 };
