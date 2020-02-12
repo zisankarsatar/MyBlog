@@ -1,15 +1,16 @@
 import React from "react";
 import fetch from "isomorphic-unfetch";
-//import Nav from "../components/nav"; <Nav />
+import Nav from "../components/nav"; 
 import Footer from "../components/footer";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-//import img from  "../public/back1.png";
+import img from  "../public/back1.png";
 
 const BlogPost = ({ post }) => (
   <body>
+    <Nav />
     <div className="container">
-         
+       
       <div className="blog">
         <h2 className="blog-title">
           <Link href="/test">
@@ -25,7 +26,10 @@ const BlogPost = ({ post }) => (
     </div>
       <style jsx>{`
       body{
-        
+        background-image:url(${img}) ;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
       }
         body .container {
           max-width: 1050px;
@@ -60,7 +64,7 @@ const BlogPost = ({ post }) => (
 
 BlogPost.getInitialProps = async ({ req, query }) => {
   // TODO: aşağıdaki satırda bulunan adresi kendi sunucu adresinle değiştirmelisin
-  const res = await fetch(`http://zisankarsatar.herokuapp/api/post/${query.postId}`);
+  const res = await fetch(`http://localhost:3000/api/post/${query.postId}`);
   const json = await res.json();
   return { post: json.post };
 };

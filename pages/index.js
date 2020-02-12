@@ -2,14 +2,15 @@ import React from "react";
 import fetch from "isomorphic-unfetch";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-//import Nav from "../components/nav"; <Nav />
+import Nav from "../components/nav"; 
 import Footer from "../components/footer";
-//import img from "../public/back1.png";
+import img from "../public/back1.png";
 
 const Home = ({posts}) => (
   <body>
-    
+    <Nav />
     <div className="container">
+
       {posts.map(post => (
         <div className="blog">
           <h2 className="blog-title">
@@ -28,8 +29,10 @@ const Home = ({posts}) => (
     
     <style jsx>{`
       body{
-       
-
+        background-image:url(${img}) ;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
       }
       body .container {
         max-width: 1050px;
@@ -63,13 +66,17 @@ const Home = ({posts}) => (
 </body>
 );
 
-Home.getInitialProps = async ({ req }) => {
+Home.getInitialProps = async ({ req ,err}) => {
   // TODO: aşağıdaki satırda bulunan adresi kendi sunucu adresinle değiştirmelisin
-  const res = await fetch(`http://zisankarsatar.herokuapp/api/posts`);//veriyi alması gereken yer
+  if(err){
+    console.log(err)
+  }else{
+    const res = await fetch(`http://localhost:3000/api/posts`);//veriyi alması gereken yer
+    const json = await res.json();
+    console.log(json);
+    return { posts: json.posts };
+  }
   
-  const json = await res.json();
-  console.log(json);
-  return { posts: json.posts };
 };
 
 export default Home 
