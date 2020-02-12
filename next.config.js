@@ -11,6 +11,7 @@ module.exports = withImages({
   }
 });
 
+APP_DEBUG=true;
 
 /*
 const withImages = require('next-images');
