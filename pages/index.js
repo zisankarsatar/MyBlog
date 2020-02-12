@@ -76,7 +76,6 @@ Home.getInitialProps = async ({ req ,err}) => {
     console.log(json);
     return { posts: json.posts };
   }
-  
 };
 
 export default Home 
