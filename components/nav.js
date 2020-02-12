@@ -29,7 +29,7 @@ const Nav =() =>(
         </Link>
       </div>
     </div>
-    <style jsx>{`
+    <style jsx>{` 
     .container{
       max-width: 650px;
       width: 100%;
