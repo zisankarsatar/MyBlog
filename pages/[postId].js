@@ -1,15 +1,15 @@
 import React from "react";
 import fetch from "isomorphic-unfetch";
-import Nav from "../components/nav";
+//import Nav from "../components/nav"; <Nav />
 import Footer from "../components/footer";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import img from  "../public/back1.png";
+//import img from  "../public/back1.png";
 
 const BlogPost = ({ post }) => (
   <body>
     <div className="container">
-      <Nav />   
+         
       <div className="blog">
         <h2 className="blog-title">
           <Link href="/test">
@@ -25,10 +25,7 @@ const BlogPost = ({ post }) => (
     </div>
       <style jsx>{`
       body{
-        background-image:url(${img}) ;
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-attachment: fixed;
+        
       }
         body .container {
           max-width: 1050px;

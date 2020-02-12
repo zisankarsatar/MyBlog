@@ -2,13 +2,13 @@ import React from "react";
 import fetch from "isomorphic-unfetch";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
-import Nav from "../components/nav";
+//import Nav from "../components/nav"; <Nav />
 import Footer from "../components/footer";
-import img from "../public/back1.png";
+//import img from "../public/back1.png";
 
 const Home = ({posts}) => (
   <body>
-    <Nav />
+    
     <div className="container">
       {posts.map(post => (
         <div className="blog">
@@ -28,10 +28,7 @@ const Home = ({posts}) => (
     
     <style jsx>{`
       body{
-        background-image:url(${img}) ;
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-attachment: fixed;
+       
 
       }
       body .container {
@@ -69,8 +66,9 @@ const Home = ({posts}) => (
 Home.getInitialProps = async ({ req }) => {
   // TODO: aşağıdaki satırda bulunan adresi kendi sunucu adresinle değiştirmelisin
   const res = await fetch(`http://zisankarsatar.herokuapp/api/posts`);//veriyi alması gereken yer
-  console.log(res);
+  
   const json = await res.json();
+  console.log(json);
   return { posts: json.posts };
 };
 

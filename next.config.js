@@ -1,4 +1,16 @@
+module.exports = {
+  webpack: config => {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: "raw-loader"
+    });
 
+    return config;
+  }
+};
+
+
+/*
 const withImages = require('next-images');
 module.exports = withImages({
   inlineImageLimit: 16384,
@@ -12,7 +24,7 @@ module.exports = withImages({
 });
 
 APP_DEBUG=true;
-
+*/
 /*
 const withImages = require('next-images');
 const withCSS = require('@zeit/next-css')
