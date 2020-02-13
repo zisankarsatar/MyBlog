@@ -64,7 +64,11 @@ const BlogPost = ({ post }) => (
 
 BlogPost.getInitialProps = async ({ req, query }) => {
   // TODO: aşağıdaki satırda bulunan adresi kendi sunucu adresinle değiştirmelisin
+<<<<<<< HEAD
   const res = await fetch(`http://localhost:3000/api/post/${query.postId}`);
+=======
+  const res = await fetch(`https://zisankarsatar.herokuapp/api/post/${query.postId}`);
+>>>>>>> f968704318358e536eb4939af34a74154fa62b53
   const json = await res.json();
   return { post: json.post };
 };
