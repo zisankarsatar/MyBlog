@@ -71,7 +71,7 @@ Home.getInitialProps = async ({ req ,err}) => {
   if(err){
     console.log(err)
   }else{
-    const res = await fetch(`http://zisankarsatar.herokuapp/api/posts`);//veriyi alması gereken yer
+    const res = await fetch(`http://localhost:3000/api/posts`);//veriyi alması gereken yer
     const json = await res.json();
     console.log(json);
     return { posts: json.posts };

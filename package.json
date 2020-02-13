@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "heroku-postbuild":"next run build",
     "start": "next start -p $PORT"
-    
   },
   "author": "zisan",
   "license": "ISC",
