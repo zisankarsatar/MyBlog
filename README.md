@@ -1,5 +1,5 @@
 ## MyBlog
-Next.js : JavaScript Freamework'üdür. SSR (Server Side Rendering) uygulama geliştiriken kullanılır.
+<b>Next.js :</b> JavaScript Freamework'üdür. React.js kullanarak SSR (Server Side Rendering) işlemi yapabilen web uygulamaları geliştirilebilir.
 
 ## Yararlanılan Kaynaklar
 <ul>
