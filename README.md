@@ -1,5 +1,5 @@
 ## MyBlog
-Next.js
+Next.js : JavaScript Freamework'üdür. SSR (Server Side Rendering) uygulama geliştiriken kullanılır.
 
 ## Yararlanılan Kaynaklar
 <ul>
