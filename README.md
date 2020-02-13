@@ -1,5 +1,5 @@
 ## MyBlog
-Next.js & React
+Next.js
 
 ## Yararlanılan Kaynaklar
 <ul>
