@@ -8,16 +8,16 @@
   <li>https://nextjs.org/learn/basics/getting-started</li>
 </ul>
 
-## Kullanılan Moduller
+<!--## Kullanılan Moduller-->
 
-<ul>
+<!--<ul>
   <li>npm init</li>
   <li>npm i next react react-dom</li>
   <li>yarn</li>
   <li>yarn add isomorphic-unfecth</li>
   <li>npm i --save react-markdown</li>
   <li>npm i --save next-images</li>
-</ul>
+</ul>-->
 
 ## Uygulama Görselleri
 ![Ekran Görüntüsü (64)](https://user-images.githubusercontent.com/48350459/74428393-f65c5400-4e69-11ea-929c-b437f61e0699.png)
